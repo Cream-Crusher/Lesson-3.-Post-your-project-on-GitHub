@@ -14,7 +14,8 @@ pip install -r requirements.txt
 pip install requests
 pip install -U python-dotenv
 ```
-
+Рекомендуется использование virtualenv
+ 
 ### Исполизование кода
 
 * Шаг 1:Зайдите в командную строку или скопируйте код в [Repl.it]
