@@ -6,11 +6,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-
-
-
-
 def get_short_link(token, parameters):
     authorization_header = {
         'Authorization': 'Bearer {}'.format(token)
@@ -37,13 +32,16 @@ def get_clicks_count(token, bitlink):
     return clicks_count
 
 if __name__ == '__main__':
-    token = os.getenv('BITLY_TOKEN')
-    parser = argparse.ArgumentParser(description='Описание что делает программа')
-    parser.parse_args()
-    link = input()
+    token = os.getenv('BITLY_TOKEN') 
+    parser = argparse.ArgumentParser(
+        description='Описание что делает программа')
+    parser.add_argument('name', help='Ваше имя')
+    link = parser.parse_args() 
+    link = (link.name)
     if link.startswith('https://bit.ly/'):
         print(get_clicks_count(token, link))
     else:
         parameters = {'long_url': link}
         bitlink = get_short_link(token, parameters)
         print(bitlink)
+        

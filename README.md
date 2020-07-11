@@ -34,7 +34,7 @@ cd ..\Lesson-3.-Post-your-project-on-GitHub
 
 командная строка:
 ```
-python main.py
+python main.py [аргумент]
 ```
 Repl.it:
 Нажмите RUN
