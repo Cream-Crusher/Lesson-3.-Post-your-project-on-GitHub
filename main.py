@@ -35,7 +35,7 @@ if __name__ == '__main__':
     token = os.getenv('BITLY_TOKEN') 
     parser = argparse.ArgumentParser(
         description='Описание что делает программа')
-    parser.add_argument('link', help='введите ссылку')
+    parser.add_argument('link', help='Введите ссылку')
     link = parser.parse_args() 
     link = (link.link)
     if link.startswith('https://bit.ly/'):
