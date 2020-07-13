@@ -18,41 +18,30 @@
 Пункт 2: Перейдите в папку с кодом в командной строке
 
 ```bash
-cd ..\Lesson-3.-Post-your-project-on-GitHub
-```
-
-Вывод:
-
-```bash
-C:\Lesson-3.-Post-your-project-on-GitHub>
+$ cd ..\Lesson-3.-Post-your-project-on-GitHub
+$ C:\Lesson-3.-Post-your-project-on-GitHub>
 ```
 
 Пункт 3: Установите зависимости
 
 ```bash
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Пункт 4: Запустите код
 
 ```bash
-python main.py https://dvmn.org
-```
- 
-Вывод:
-
-```bash
-https://bit.ly/304YFwV
+$ python main.py https://dvmn.org
+$ https://bit.ly/304YFwV
 ```                                                                                                                               
 
 Пункт 5: Узнать количество переходов
 
 Скопируйте сокр-ссылку и повторите Пункт 4 с измененной ссылкой       
 
-Вывод:
-
 ```bash
-0 
+$ python main.py https://bit.ly/304YFwV
+$ 0 
 ```   
 
 ### Цель проекта
