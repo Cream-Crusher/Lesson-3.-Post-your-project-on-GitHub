@@ -14,7 +14,7 @@
 
 Пункт 2: Перейдите в папку с кодом в командной строке
 
-```bash
+```console
 cd ..\Lesson-3.-Post-your-project-on-GitHub
 ```
 
