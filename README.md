@@ -20,13 +20,13 @@ cd ..\Lesson-3.-Post-your-project-on-GitHub
 
 Пункт 3: Установите зависимости
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 Пункт 4: Запустите код
 
-```
+```bash
 python main.py [аргумент]
 ```
 
