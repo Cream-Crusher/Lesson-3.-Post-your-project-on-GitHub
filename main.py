@@ -3,7 +3,6 @@ import os
 import argparse
 from urllib.parse import urlparse
 from dotenv import load_dotenv
-load_dotenv()
 
 
 def get_short_link(token, parameters):
@@ -32,12 +31,13 @@ def get_clicks_count(token, bitlink):
     return clicks_count
 
 if __name__ == '__main__':
+    load_dotenv()
     token = os.getenv('BITLY_TOKEN') 
     parser = argparse.ArgumentParser(
         description='Описание что делает программа')
-    parser.add_argument('name', help='Ваше имя')
+    parser.add_argument('link', help='введите ссылку')
     link = parser.parse_args() 
-    link = (link.name)
+    link = (link.link)
     if link.startswith('https://bit.ly/'):
         print(get_clicks_count(token, link))
     else:
@@ -45,3 +45,6 @@ if __name__ == '__main__':
         bitlink = get_short_link(token, parameters)
         print(bitlink)
         
+        
+        
+   
