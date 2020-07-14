@@ -36,8 +36,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Описание что делает программа')
     parser.add_argument('link', help='Введите ссылку')
-    link = parser.parse_args() 
-    link = (link.link)
+    args = parser.parse_args() 
+    link = (args.link)
     if link.startswith('https://bit.ly/'):
         print(get_clicks_count(token, link))
     else:
